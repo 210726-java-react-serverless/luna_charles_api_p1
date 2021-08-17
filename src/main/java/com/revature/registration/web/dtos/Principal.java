@@ -1,5 +1,6 @@
 package com.revature.registration.web.dtos;
 
+import com.revature.registration.models.Faculty;
 import com.revature.registration.models.Student;
 
 import java.util.Objects;
@@ -14,6 +15,11 @@ public class Principal {
     public Principal(Student student) {
         this.id = student.getId();
         this.email = student.getEmail();
+    }
+
+    public Principal(Faculty faculty) {
+        this.id = faculty.getId();
+        this.email = getEmail();
     }
 
     public String getId() {
