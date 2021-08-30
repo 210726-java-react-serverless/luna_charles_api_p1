@@ -30,4 +30,8 @@ hs_err_pid*
 *.properties
 
 # Target Folder
-*/target/*
+target/*
+
+# .idea folder
+.idea/*
+
